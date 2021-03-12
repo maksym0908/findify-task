@@ -1,0 +1,48 @@
+.graph-wrapper {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    .part1, .part2, .part3, .part4 {
+        height: 30px;
+        width: 100%;
+    }
+    .part1 {
+        border-left: 1px solid #9c9c9c;
+        border-right: 1px solid #9c9c9c;
+        border-bottom: 1px solid #9c9c9c;
+        &::after {
+            content: "";
+            display: block;
+            position: relative;
+            width: 1px;
+            height: 10px;
+            background-color: #9c9c9c;
+            bottom: -30px;
+            left: 50%;
+        }
+    }
+    .part2, .part3, .part4 {
+        border-right: 1px solid #9c9c9c;
+        border-bottom: 1px solid #9c9c9c;
+        &::after {
+            content: "";
+            display: block;
+            position: relative;
+            width: 1px;
+            height: 10px;
+            background-color: #9c9c9c;
+            bottom: -30px;
+            left: 50%;
+        }
+    }
+}
+.dollars-wrapper {
+    width: 100%;
+    display: flex;
+    span {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 700;
+    }
+}
